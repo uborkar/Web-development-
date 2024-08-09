@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables in Html</title>
+    <style>
+        h1{
+            color:blue;
+            background-color: rgb(239, 215, 215);
+            text-align: center;
+        }
+        h2{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tables in html..</h1>
+   <p>Following are some different types of table structure drawn from HTML with the help of <strong>Rowspan and Colspan.</strong> </p>
+    <h2>Table 1:</h2>
+    <table border="1px">
+        <thead>
+            <th>Data</th>
+            <th>Data</th>
+            <th>Data</th>
+            <th>Data</th>
+            <th>Data</th>
+            <th>Data</th>
+        </thead>
+        <tbody>
+            <tr>
+               <td>1</td>
+               <td colspan="4">2</td>
+               <td rowspan="2">3</td>
+            </tr>
+            <tr>
+               <td>5</td>
+               <td colspan="3">6</td>
+               <td rowspan="3">9</td> 
+            </tr>
+            <tr>
+               <td>7</td>
+               <td colspan="2">8</td>
+               <td rowspan="2">10</td>
+               <td rowspan="2">4</td>
+            </tr>
+            <tr>
+               <td colspan="2">11</td>
+               <td>12</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Table 2:</h2>
+    <table border="3">
+        <tr>
+            <td>column1</td>
+            <td>column2</td>
+            <td>column3</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Row 1 cell 1</td>
+            <td>Row 1 cell 2</td>
+            <td>Row 1 cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2 cell 2</td>
+            <td>Row 2 cell 3</td>
+        </tr>
+        <tr>
+            <td colspan="3">Row 3 Cell 1</td>
+        </tr>
+    </table>
+    <h2>Table 3:</h2>
+    <table border="4">
+        <th>Sr.No</th>
+        <th>Full Name</th>
+        <th>Position</th>
+        <th>Salary</th>
+        <th>Type</th>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Umair Borkar</td>
+                <td>Data Engineer</td>
+                <td>$5,500</td>
+                <td rowspan="4">Company Founders</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Tejas Bhandigare</td>
+                <td>Java Developer</td>
+                <td>$6,000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Shreyash Patil</td>
+                <td>Software Engineer</td>
+                <td>$8,000</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Ajit Mali</td>
+                <td>Full Stack Web Developer</td>
+                <td>$6,500</td>
+            </tr>
+            <tfoot>
+                <td colspan="3">Total Expenses:</td>
+                <td>$26,000</td>
+            </tfoot>
+        </tbody>
+    </table>
+    <h2>Table 4:</h2>
+    <table border="5">
+        <th>Country</th>
+        <th>State</th>
+        <th>City</th>
+        <th>Street</th>
+        <th>Male</th>
+        <th>Female</th>
+        <th>Other</th>
+        <tbody>
+            <tr>
+            <td rowspan="8">1</td>
+            <td rowspan="4">Kerela</td>
+            <td rowspan="2">Cochin</td>
+            <td>New Street</td>
+            <td>500</td>
+            <td>300</td>
+            <td>10</td>
+            </tr>
+            <tr>
+                <td>main Street</td>
+                <td>300</td>
+                <td>500</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Trivedhum</td>
+                <td>main Street</td>
+                <td>300</td>
+                <td>500</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>main Street</td>
+                <td>300</td>
+                <td>500</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Maharashtra</td>
+                <td rowspan="2">Mumbai</td>
+                <td>main Street</td>
+                <td>300</td>
+                <td>500</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>main Street</td>
+                <td>300</td>
+                <td>500</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Pune</td>
+                <td>main Street</td>
+                <td>300</td>
+                <td>500</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>main Street</td>
+                <td>300</td>
+                <td>500</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2</td>
+                <td rowspan="2">Alaska</td>
+                <td rowspan="2">AKA Central</td>
+                <td>New Street</td>
+                <td>750</td>
+                <td>520</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>Cross Street</td>
+                <td>220</td>
+                <td>300</td>
+                <td>11</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Table 5:</h2>
+    <table border="7">
+        <th rowspan="3">Day</th>
+        <th colspan="3">Seminar</th>
+        <tr>
+            <td colspan="2">Schedule</td>
+            <td rowspan="2">Topic</td>
+        </tr>
+        <tr>
+            <td>Begin</td>
+            <td>End</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">8:00 am</td>
+            <td rowspan="2">5:00 pm</td>
+            <td>Introduction to Xml</td>
+        </tr>
+        <tr>
+            <td>Web technology Practice</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Tuesday</td>
+            <td>8:00 am</td>
+            <td>11:00 am</td>
+            <td>Android Programing Practical</td>
+        </tr>
+        <tr>
+            <td>8:00 am</td>
+            <td>11:00 am</td>
+            <td rowspan="2">C++ Programing Practical</td>
+        </tr>
+        <tr>
+            <td>8:00 am</td>
+            <td>11:00 am</td>
+        </tr>
+        <tr>
+            <td>Wednessday</td>
+            <td>8:30am</td>
+            <td>6:00 pm</td>
+            <td>Data Analysis projects</td>
+        </tr>
+    </table>
+</body>
+</html>
