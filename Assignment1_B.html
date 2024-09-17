@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        table{
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+            background-color: bisque;
+        }
+        table,th,td{
+            border: 1px solid black;
+        }
+        body{
+            margin-top: 50px;
+            font-size: 22px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="tel"],
+        input[type="datetime-local"],
+        select,
+        textarea {
+            width: 350px;
+            height: 25px;
+            box-sizing: border-box;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+        }
+        input,select,textarea {
+            margin: 10px;
+        }
+        button{
+            width: 100px;
+            height: 30px;
+            font-size: 18px;
+            padding: 1px;
+            border: 2px solid #000;
+            border-radius: 5px;
+            background-color: rgb(218, 222, 225);
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function clearForm(){
+            //get the form by its ID and reset it
+            document.getElementById("srf").reset();
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <form id="srf" action="/submit_form" method="post" onsubmit="clearForm(); return false;">
+        <th colspan="2">Student Registration Form</th>
+        <tr>
+            <td><label for="name">Name</label></td>
+            <td><input type="text" name="Name" id="name"></td>
+        </tr>
+        <tr>
+            <td><label for="F_name">Father Name</label></td>
+            <td><input type="text" name="F_Name" id="F_name"></td>
+        </tr>
+        <tr>
+            <td><label for="Address">Personal Address</label></td>
+            <td><textarea name="Address" id="Address" rows="4"></textarea></td>
+        <tr>
+            <td><label for="Gender">Gender</label></td>
+            <td><input type="radio" name="Gender"><label for="Male">Male</label><input type="radio" name="Gender"><label for="female">Female</label></td>
+        </tr>
+        <tr>
+            <td><label for="city">City</label></td>
+            <td><select name="city" id="city">
+                <option value="select">select..</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Kolhapur">Kolhapur</option>
+                <option value="Pune">Pune</option>
+                <option value="Nagpur">Nagpur</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td><label for="Course">Course</label></td>
+            <td>
+                <select name="Course" id="Course">
+                    <option value="select">select..</option>
+                    <option value="BCA">BCA</option>
+                    <option value="MCA">MCA</option>
+                    <option value="B.TECH">B.TECH</option>
+                    <option value="BSC.CS">BSC.CS</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="Skills">Skill Set</label></td>
+            <td><input type="checkbox" name="python"><label for="Python">Python</label><input type="checkbox" name="JAVA"><label for="JAVA">JAVA</label>
+                <input type="checkbox" name="C++"><label for="C++">C++</label></td>
+        </tr>
+        <tr>
+            <td><label for="Pincode">Pin Code</label></td>
+            <td><input type="number" name="pincode" id="pincode" placeholder="6-digit pincode" min="100000" max="999999" maxlength="6"></td>
+        </tr>
+        <tr>
+            <td><label for="Email">Email</label></td>
+            <td><input type="email" name="email" id="email"></td>
+        </tr>
+        <tr>
+            <td><label for="DOB">D.O.B</label></td>
+            <td><input type="datetime-local"></td>
+        </tr>
+        <tr>
+            <td><label for="Mobile_no">Mobile No.</label></td>
+            <td><input type="tel" name="Mobile" id="mobile"></td>
+        </tr>
+        <tfoot>
+        <tr>
+            <td><button type="reset">Reset</button></td>
+            <td><button type="submit">Submit</button></td>
+        </tr>
+    </tfoot>
+        </form>
+    </table>
+</body>
+</html>
