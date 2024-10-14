@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        table{
+            width : 600px;
+            height: 400px;
+            position: absolute;
+            margin-top: 100px;
+            margin-left: 25%;
+        }
+        table,td,th{
+            border: 1px solid;
+            
+        }
+        .Container{
+            position: relative;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="Container">
+    <table>
+        <tr>
+            <th rowspan="2">SrNo.:</th>
+            <th rowspan="2">Departments Name</th>
+            <th colspan="2">Courses</th>
+        </tr>
+        <tr>
+            <td>UG</td>
+            <td>PG</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><a href="https://en.wikipedia.org/wiki/Computer_science">Computer Science</a></td>
+            <td>yes</td>
+            <td>yes</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><a href="https://en.wikipedia.org/wiki/Mathematics">Mathematics</a></td>
+            <td>No</td>
+            <td>yes</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><a href="https://en.wikipedia.org/wiki/Physics">Physics</a></td>
+            <td>yes</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><a href="https://en.wikipedia.org/wiki/Chemistry">Chemistry</a></td>
+            <td>yes</td>
+            <td>yes</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
