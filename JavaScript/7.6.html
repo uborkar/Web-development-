@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Greeting msg</title>
+</head>
+<body bgcolor="lavender">
+<h1 align ="center">Js program to wish user as per time</h1>
+<script type="text/javascript">
+
+var day,month,monthname,year,hour,minute,sec,msg;
+        date=new Date();
+        day=date.getDate();
+        
+        
+        month=date.getMonth();
+        
+        
+        monthname=date.toLocaleString('default',{month:'long'});
+        
+        
+        year=date.getFullYear();
+        
+        
+        hour=date.getHours();
+        minute=date.getMinutes();
+       
+        sec=date.getSeconds();
+      
+      if(minute<10)
+      {
+      minute='0'+minute;
+      
+      }
+      
+      if(sec<10)
+      {
+      sec='0'+sec;
+      
+      }
+      
+      if(hour>6 && hour<12)
+      {
+      msg="Good morning.....)";
+      
+      }
+      else if(hour>12 && hour<16){
+      msg="Good afternoon";
+      
+      }
+      else if(hour>16 && hour<20)
+     {
+     msg="good evening";
+     
+     }
+     else msg="Good Night"
+      
+document.write("<h1>"+"Today's date :"+day+"-"+monthname+"-"+year+"</h1>");
+
+document.write("<hr>")
+
+document.write("Time  "+hour+":"+minute+":"+sec+"");
+
+document.write("<hr>");
+
+document.write(msg);
+
+
+document.write("<hr>");
+
+
+
+</script>
+</body>
+</html>
+
+
+
+
+

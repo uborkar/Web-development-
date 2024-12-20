@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Armstrong Number</title>
+  </head>
+  <body bgcolor="lavender">
+    <h1 align="center">To check enter number is armstrong or not</h1>
+    <form name="f1">
+      Enter a number:<input type="number" name="n1" /><br /><br />
+      <input type="button" value="check" onClick="a()" /><br /><br />
+      Sum=<input type="text" name="n2" /><br /><br />
+      Ans:<input type="text" name="n3" /><br />
+    </form>
+    <script type="text/javascript">
+      function a() {
+        var a,
+          size,
+          arr,
+          sum = 0;
+        a = f1.n1.value;
+        size = a.length;
+        arr = a.split("");
+        for (let i = 0; i < size; i++) {
+          arr[i] = arr[i] ** a.length;
+        }
+        for (let i = 0; i < size; i++) {
+          sum = sum + arr[i];
+        }
+        f1.n2.value = sum;
+        if (a == sum) {
+          f1.n3.value = "It's Armstrong number";
+        } else {
+          f1.n3.value = "Not an Armstrong number";
+        }
+      }
+    </script>
+  </body>
+</html>

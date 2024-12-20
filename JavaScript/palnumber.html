@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Palindrome No.</title>
+	</head>
+	<body>
+	<h1 align="center">JS program to check entered string is Palindrome no. or not</h1>
+	<form name="f1">
+	Enter No. : <input type="number" name="n1"><br>
+	<input type="button" value="check" onClick="p()"><br>
+	<input type="text" name="n2">
+	</form>
+	<script type="text/javascript">
+	function p()
+		{
+		var a, b, c, d, e ;
+		a=parseFloat(f1.n1.value);
+		b=a.toString();
+		c=b.split('');
+		d=c.reverse();
+		e=d.join('');
+		if(a==e)
+			f1.n2.value="It is Palindrome";
+		else
+			f1.n2.value="It is not Palindrome";
+		
+		}
+   	</script>
+	</body>
+</html>

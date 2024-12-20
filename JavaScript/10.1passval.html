@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<br>
+<h2>Password validation</h2>
+<form name="f1">
+Enter password:<input type="password" name="t1"><br>
+<input type="button" value="submit" onclick="pass()">
+</form>
+
+
+<script type="text/javascript">
+function pass(){
+var a=f1.t1.value;
+if (a==null || a=="")
+{
+  alert("Enter Something");
+  return false;}
+  else if(a.length<4 || length>8 )
+  {
+  alert("password should be min 4 letter max 8 letters.");
+  }
+  else{ alert("password submitted ");
+}
+
+}
+
+</script>
+
+</body>
+</html>

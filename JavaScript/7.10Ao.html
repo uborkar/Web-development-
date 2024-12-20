@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascrip Arithmatic Operations.</progress></title>
+  </head>
+  <body onLoad="oper()" bgcolor="lavender">
+    <script>
+      function oper() {
+        var ch = parseInt(
+          prompt(
+            "Enter your choice 1.Addition 2.Subtraction 3.Multiplication 4.Division  5. Modulus 6.Square 7. Square Root  8. Power  9. Random Number  10. Round a number 11. Find +ve or -ve no"
+          )
+        );
+        switch (ch) {
+          case 1:
+            var v1 = parseInt(prompt("Enter the first value "));
+            var v2 = parseInt(prompt("Enter the second value "));
+            var v3 = v1 + v2;
+            document.writeln("<br> " + "Addition: " + v3);
+            break;
+          case 2:
+            var v4 = parseInt(prompt("Enter the first value "));
+            var v5 = parseInt(prompt("Enter the second value "));
+            var v6 = v4 - v5;
+
+            document.writeln("<br> " + "Subtraction:" + v6);
+
+            break;
+
+          case 3:
+            var v7 = parseInt(prompt("Enter the first value "));
+
+            var v8 = parseInt(prompt("Enter the second value "));
+
+            var v9 = v7 * v8;
+
+            document.writeln("<br> " + "Multiplication:  " + v9);
+
+            break;
+
+          case 4:
+            var v10 = parseInt(prompt("Enter the first value "));
+
+            var v11 = parseInt(prompt("Enter the second value "));
+
+            var v12 = v10 / v11;
+
+            document.writeln("<br> " + "Divison: " + v12);
+
+            break;
+
+          case 5:
+            var v13 = parseInt(prompt("Enter the first value "));
+
+            var v14 = parseInt(prompt("Enter the second value "));
+
+            var v15 = v13 % v14;
+
+            document.writeln("<br> " + "Modulus: " + v15);
+
+            break;
+
+          case 6:
+            var v16 = parseInt(prompt("Enter the value "));
+
+            var v17 = v16 * v16;
+
+            document.writeln("<br> " + "Square: " + v17);
+
+            break;
+
+           // case 7:
+              //  var v18=parseInt(prompt("Enter the value"));
+             //   var v19= v18 * v18/v18;
+
+              //  document.writeln("<br>"+"Root is:"+  v19);
+               // break;
+
+          default:
+            document.writeln(" PLz Enter valid choise ");
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<form name="f1">
+Enter Mail : <input type="email" name="n1" required><br><br>
+Enter Password : <input type="password" name="n2" required><br><br>
+<input type="button" value="click" onclick="passForm()">
+</form>
+<script type="text/javascript">
+function passForm() {
+   let m = f1.n1.value;
+   let p = f1.n2.value;
+   let passValid = true;
+   let mailValid = true;
+   let count = 0;
+   let _postion1, _position2;
+   for(let i = 0; i < m.length; i++) {
+       if(m[i] == "@" || m[i] == ".") {
+           count++;
+       }
+       if(m[i] == "@")
+           _position1 = i;
+           
+       if(m[i] == ".")
+           _position2 = i;
+           
+   }
+   
+   if(count != 2 || _position1 > _position2){
+      mailValid = false;
+      alert("Enter the valid email address")
+   }
+   
+   if(p.length < 4 || p.length > 8){
+       passValid = false;
+       alert("Enter the password of right format (> 4 < 8)")
+   }
+   
+   if(passValid == true && mailValid == true) {
+       confirm("Account Created Sucessfully");
+   }
+      
+}
+</script>
+</body>
+</html>

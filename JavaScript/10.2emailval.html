@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<form name="f1">
+<br><hr>
+<h1>EMAIL VALIDATION</h1>
+<hr>
+<br>
+ENTER EMAIL:<input text="text" name="t1"><br><br>
+<input type="button" value="submit" onclick="email()">
+</form>
+
+<script type="text/javascript">
+function email(){
+var a,b,c;
+a=f1.t1.value;
+b=a.indexOf("@");
+c=a.indexOf(".");
+if(b<1 || c<b+2 || a.lengthc+2)
+{
+alert("Plz Enter valid email");
+return"false";
+}
+else
+{
+alert("Email submitted");
+}
+
+
+
+}
+
+</script>
+
+
+</body>
+</html>

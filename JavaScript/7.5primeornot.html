@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prime numbers</title>
+    <style type="text/css">
+      h1 {
+        color: rgb(71, 34, 239);
+      }
+    </style>
+  </head>
+  <body bgcolor="lavender">
+    <h1>To check weather enterd number is prime or not:</h1>
+    <form name="f1">
+      Enter lower limit :
+      <input type="number" name="n1" />
+      <br />
+      Enter upper limit :
+      <input type="number" name="n2" />
+      <br />
+      <input type="button" value="Find" onclick="prime()" />
+    </form>
+    <script type="text/javascript">
+      function prime() {
+        var i, j, flag, ll, up;
+        ll = parseInt(f1.n1.value);
+        ul = parseInt(f1.n2.value);
+        for (i = ll; i <= ul; i++) {
+          flag = 0;
+          for (j = 2; j < i / 2; j++) {
+            if (i % j == 0) {
+              flag = 1;
+              break;
+            }
+          }
+          if (flag == 0) document.write(i + " - Prime <br>");
+          else document.write(i + " - Not Prime <br>");
+        }
+      }
+    </script>
+  </body>
+</html>

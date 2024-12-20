@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Canvas</title>
+</head>
+<body>
+<center>
+<canvas height="300" width="300"
+ style="border:5px solid black" id="umair">
+</canvas>
+<script type="text/javascript">
+var a,b,c;
+a=document.getElementById("umair");
+b=a.getContext("2d");
+b.fillStyle="aqua";
+b.fillRect(50,80,220,100);
+b.fillStyle="blue";
+b.strokeRect(50,80,220,100);
+b.font="50px Times New Roman";
+b.fillText("umair",60,140);
+</script>
+</center>
+</body>
+</html>

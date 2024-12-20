@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To check number entred by the user is prime or not</title>
+</head>
+<body>
+    <form name="f1">
+        Enter any number of your choise:<input type="number" name="n1" required><br><br>
+        <input type="button" value="check" onclick="check()"><br><br>
+       <b>ANS:</b><input type="text" name="n2" > 
+    </form>
+    <script type="text/javascript">
+        function check(){
+            let no,ans;
+            no=(f1.n1.value);
+            if(no%2==0)
+            {
+                ans=("It's prime number");
+                f1.n2.value=ans;
+            }
+            else
+            {
+                ans=("It's not a prime number");
+                f1.n2.value=ans;
+            }
+        }
+    </script>
+</body>
+</html>

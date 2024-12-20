@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Printing marksheet</title>
+</head>
+<body>
+<h1 align="center">Data Entry for Marksheet</h1>
+<form name="f1">
+Name:<input type="text" name="n1"><br><br>
+Data Structure:<input type="number" name="s1"><br><br>
+Computer Network:<input type="number" name="s2"><br><br>
+Statistics:<input type="number" name="s3"><br><br>
+Web Technology:<input type="number" name="s4"><br><br>
+HRM:<input type="number" name="s5"><br><br>
+Practical:<input type="number" name="s6"><br><br>
+<br>
+<br>
+<input type="button" value="Total"onclick="total()"><br><br>
+<input type="text" name="t1"><br><br>
+<input type="button" value="Percentage"onclick="perc()"><br><br>
+<input type="text" name="t2"><br><br>
+<input type="button" value="grade"onclick="grade()"><br><br>
+<input type="text" name="t3"><br><br><br><br><br>
+<a href="Result.html"><input type="button" value="Result"onclick="Result()"></a> <br>
+</form>
+<script type="text/javascript">
+var sum;
+function total(){
+//var a,b,c,d,e,f;
+// var n1=f1.n1.value;
+ var a=parseInt(f1.s1.value);
+ var b=parseInt(f1.s2.value);
+ var c=parseInt(f1.s3.value);
+ var d=parseInt(f1.s4.value);
+ var e=parseInt(f1.s5.value);
+ var f=parseInt(f1.s6.value);
+  sum=a+b+c+d+e+f;
+ f1.t1.value=sum; 
+ //t= s1+s2+s3+s4+s5+s6;
+}
+function perc(){
+total();
+f1.t2.value=(sum/600)*100;
+}
+function grade() {
+ if(percen >= 70)
+      f1.grade.value = "class A";
+ else if(percen >= 60 && percen < 70)
+      f1.grade.value = "class B";
+ else if(percen >= 40 && percen < 60)
+      f1.grade.value = "class C";
+ else {
+      f1.grade.value = "FAIL";
+ }
+
+ 
+</script>
+
+</body>
+</html>
