@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Email Validation</title> 
+    <style>         
+        main { 
+            text-align: center; 
+        } 
+ 
+        input { all: unset;           
+                width: 15%; 
+                border-bottom: 2px solid red; 
+        } 
+    </style> 
+</head> 
+ 
+<body> 
+    <main> 
+        <h1>Email Validation</h1> 
+        <input type="text" name="email" id="email" placeholder="Enter Email" oninput="validate(email.value)"> 
+        <p id="message"></p> 
+    </main>     <script> 
+        function validate(email) { 
+            if (email.includes('@') && email.includes('.')) { 
+                document.getElementById('email').style.borderBottomColor = 
+"green"; 
+                document.getElementById('message').innerHTML = 'Email Validates';                 
+                document.getElementById('message').style.color = 'green'; 
+            }             else { 
+                document.getElementById('message').innerHTML = 'Please Enter Valid Email'; 
+                document.getElementById('message').style.color = 'red';                 
+                document.getElementById('message').style.display = 'block'; 
+            } 
+        } 
+    </script> 
+</body> 
+ 
+</html> 
