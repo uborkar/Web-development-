@@ -25,6 +25,15 @@ Welcome to my **Web Development Repository**! This repository serves as a showca
 - **JavaScript**: The interactivity and dynamic behavior of the web.
 
 This repository documents my progress as I master these technologies, laying the foundation for creating modern, responsive, and interactive web applications.
+Web development refers to the creating, building, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management. It is the creation of an application that works over the internet i.e. websites.
+
+Web Development
+Web Development
+Web development is typically broken down into three core areas:
+
+Frontend Development
+Backend Development
+Full-stack Development
 
 ---
 
