@@ -35,6 +35,8 @@ Frontend Development
 Backend Development
 Full-stack Development
 
+![HTML-Tutorials](https://www.geeksforgeeks.org/html-tutorial/)
+
 ---
 
 ## Repository Structure
