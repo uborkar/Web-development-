@@ -86,7 +86,8 @@ If you're just starting with web development, here are some helpful tips:
    - Master the basics: variables, loops, and functions.
    - Practice DOM manipulation to add interactivity to your pages.
    - Explore ES6+ features like `let`, `const`, and arrow functions.
-4.**React JS**:
+     
+4. **React JS**:
    -React, also known as ReactJS, is a popular and powerful JavaScript library used for building dynamic and interactive user interfaces, primarily for single-page applications (SPAs). It was developed and maintained by       
     Facebook and has gained significant popularity due to its efficient rendering techniques, reusable components, and active community support.
     In this article, we will explore React Introduction, what React is, its key features, benefits, and why it’s a great choice for modern web development.
